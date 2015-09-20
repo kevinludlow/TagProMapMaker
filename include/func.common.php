@@ -61,6 +61,24 @@
   } // end function getEmail()
 
 
+  function countUsers()
+  {
+    $query = "SELECT COUNT(pk_ID) FROM "._DB_NAME."."._DB_PREFIX."_User";
+    $result = mysql_query( $query );
+    $row = mysql_fetch_row( $result );
+
+    return $row[0];
+  }
+
+  function countMaps()
+  {
+    $query = "SELECT COUNT(pk_ID) FROM "._DB_NAME."."._DB_PREFIX."_Map";
+    $result = mysql_query( $query );
+    $row = mysql_fetch_row( $result );
+
+    return $row[0];
+  }
+
   function get_op()
   {
 

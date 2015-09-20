@@ -155,11 +155,11 @@ if (isset($_SESSION['token']))
   } // end else not logged in
 
   // Create the body text
-  $BODY .= "<h3>Welcome to TagPro Map Designer v1.0</h3>\n";
+  $BODY .= "<h3>Welcome to TagPro Map Designer v2.0</h3>\n";
 
-  $BODY .= "<p>It's been awhile since I last got involved in a community-driven project like this, but I'm happy to contribute however I can.  Since I build custom administration interfaces for a living, I thought a map generator and manager wouldn't be too hard a task.</p>\n";
+  $BODY .= "<p>It's been well over a year since I last supported this MapMaker.  But with more than <strong>".number_format( countUsers() )."</strong> users having created more than <strong>".number_format( countMaps() )."</strong>  maps, I thought it was time to open it back up to the general public.  I realize there are competing and even much better map programs available at this point.  But for anyone looking to get involved with a fun project, I'd love your help!</p>\n";
 
-  $BODY .= "<p>It's a little rough around the edges, but I've only put about 10 hours of work into so far.  If there is enough interest in using it, I will happily continue improving it as an ongoing side-project for the TagPro community.</p>\n\n";
+  $BODY .= "<p>The GitHub project can be found here under <a href=\"https://github.com/kevinludlow/TagProMapMaker\">TagProMapMaker</a>.</p>\n\n";
 
   $BODY .= "<h4>Getting an Account</h4>\n";
 
