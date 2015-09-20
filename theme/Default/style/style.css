@@ -1,0 +1,209 @@
+body, html
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+a         { color: #96a6bd; text-decoration: none; outline: none; }
+a:link    { color: #96a6bd; text-decoration: none; outline: none; }
+a:visited { color: #96a6bd; text-decoration: none; outline: none; }
+a:hover   { color: #96a6bd; text-decoration: none; outline: none; }
+a:active  { color: #96a6bd; text-decoration: none; outline: none; }
+
+/* Define the page layout */
+/* Note that this was changed from a DIV layout to a TABULAR layout
+   to handle any quirks presented with moving dynamic elements around
+   in jQuery (tables can be a bit easier to program in that regard */
+
+div.container
+{
+  position: relative;
+  width: 1380px;
+}
+
+div.header
+{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b1b;
+}
+
+div.header div.logo
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 294px;
+}
+
+div.header div.logo img
+{
+  border: 0px;
+}
+
+div.header div.status
+{
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #a5a5a5;
+  font-size: 12px;
+}
+
+table.bodyContainer
+{
+  width: 100%;
+  border-spacing: 0px;
+}
+
+table.bodyContainer td.navigation
+{
+  width: 180px;
+  vertical-align: top;
+  padding: 10px;
+  border-right: 1px solid #e5e5e5;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+table.bodyContainer td.content
+{
+  padding: 10px;
+  padding-top: 9px;
+  vertical-align: top;
+  border-right: 1px solid #e5e5e5;
+}
+
+
+/* Define the brush selector table properties */
+
+table.brush_selection
+{
+  width: 100%;
+  border-spacing: 0px;
+  line-height: 0px;
+}
+
+table.brush_selection td
+{
+  width: 33%;
+  text-align: center;
+}
+
+table.brush_selection td.info
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table.brush_selection tr td img
+{
+  border: 2px solid #e5e5e5;
+}
+
+table.brush_selection tr td img.selected
+{
+  border: 2px solid #ff8080;
+}
+
+
+/* Define the editable map properties */
+
+table.map
+{
+  border-spacing: 0px;
+  font-size: 10px;
+  line-height: 0px;
+  border-right: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+table.map td
+{
+  height: 20px;
+  width: 20px;
+  border-left: 1px solid #c5c5c5;
+  border-top: 1px solid #c5c5c5;
+  text-align: center;
+}
+
+/* Define the viewable map properties */
+
+table.mapview
+{
+  border-spacing: 0px;
+  font-size: 10px;
+  line-height: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+table.mapview td
+{
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Define the map listing table properties */
+
+table.mapListing
+{
+  width: 100%;
+  border-spacing: 0px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+table.mapListing tr th
+{
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+  background-color: #fafafa;
+}
+
+table.mapListing tr td
+{
+  padding: 5px;
+  border-top: 1px solid #e5e5e5;
+}
+
+table.mapListing tr td.empty
+{
+  padding: 30px;
+  color: #990000;
+  text-align: center;
+}
+
+/* Define the paragraphs for front page text */
+
+h3
+{
+  font-size: 18px;
+}
+
+h4
+{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p, ul, li
+{
+  color: #373737;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
