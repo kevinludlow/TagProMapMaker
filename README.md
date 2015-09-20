@@ -19,6 +19,8 @@ ImageMagick is used to turn the map pieces into a visible PNG image, the same im
 * sudo pecl install imagick
 * sudo echo "extension=imagick.so" > /etc/php.d/imagick.ini
 
+More detailed instructions can be found here: http://tecadmin.net/install-imagemagick-on-linux/#
+
 # Setup / Configuration
 
 * Create a database called TagProMapMaker
