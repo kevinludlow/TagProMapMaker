@@ -171,12 +171,9 @@ if (isset($_SESSION['token']))
 
   $BODY .= "<p>All programming and hosting is done entirely for the benefit of the TagPro community.  If you have the ability to help support us, we'd greatly appreciate it!</p>\n\n";
 
-  $BODY .= "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n";
-  $BODY .= "  <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\n";
-  $BODY .= "  <input type=\"hidden\" name=\"hosted_button_id\" value=\"Z5EPTZ7Z49478\">\n";
-  $BODY .= "  <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal Donate\">\n";
-  $BODY .= "  <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\n";
-  $BODY .= "</form>\n\n";
+  $BODY .= "<a href=\"https://www.paypal.me/ludlow/9.99\">\n";
+  $BODY .= "  <img alt=\"\" border=\"0\" src=\"theme/Default/images/PayPal/Donate.png\" style=\"width: 160px;\" />\n";
+  $BODY .= "</a>\n";
 
   $BODY .= "<h4>Using the Map Designer</h4>\n";
 
