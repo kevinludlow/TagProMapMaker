@@ -35,22 +35,22 @@ More detailed instructions can be found here: http://tecadmin.net/install-imagem
 
 This is a far from exhaustive list of things I would like to see added to the MapMaker.
 
-* Build to 2015 Spec
-** Add new tiles (diagonals, yellow flags, gravity well, etc)
-** Fix JSON builder (for buttons, gates, and portals)
-** Include Mars Ball!
-** Include Potatos and Gravity
-** Ensure cross-browser compatibility
+### Build to 2015 Spec
+* Add new tiles (diagonals, yellow flags, gravity well, etc)
+* Fix JSON builder (for buttons, gates, and portals)
+* Include Mars Ball!
+* Include Potatos and Gravity
+* Ensure cross-browser compatibility
 
-* Ease-of-Use Functionality
-** Allow the user to click and hold while drawing
-** Allow the user to change the size of the map
+### Ease-of-Use Functionality
+* Allow the user to click and hold while drawing
+* Allow the user to change the size of the map
 
-* Nice to Have
-** Ranking system for other users
-** Better/faster testing options
-** Better importing and exporting of maps
-** Multi-user collaborative map editing
+## Nice to Have
+* Ranking system for other users
+* Better/faster testing options
+* Better importing and exporting of maps
+* Multi-user collaborative map editing
 
-* Design
-** Better logo using some combination of a bee and something relevant to TagPro
+### Design
+* Better logo using some combination of a bee and something relevant to TagPro
