@@ -1,10 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.3.10
--- http://www.phpmyadmin.net
---
--- Host: voterblocks.cvcss2cfh3fh.us-west-2.rds.amazonaws.com:3306
--- Generation Time: Sep 20, 2015 at 12:54 AM
--- Server version: 5.6.23-log
 -- PHP Version: 5.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
