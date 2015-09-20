@@ -10,7 +10,16 @@ Since this is only just being released to the community I am still in the proces
 * MySQL Database
 * ImageMagick (http://www.imagemagick.org/script/install-source.php)
 
-# Setup
+# Installing ImageMagick
+
+ImageMagick is used to turn the map pieces into a visible PNG image, the same image that is used by the TagPro interpreter.  On CentOS/RHEL you can use the following steps to install ImageMagick.
+
+* sudo yum install gcc php-devel php-pear
+* sudo yum install ImageMagick ImageMagick-devel
+* sudo pecl install imagick
+* sudo echo "extension=imagick.so" > /etc/php.d/imagick.ini
+
+# Setup / Configuration
 
 * Create a database called TagProMapMaker
 * Run the SQL script found in /config/TagProMapMaker.sql (this will automatically create a test user)
