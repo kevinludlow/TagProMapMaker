@@ -1,5 +1,5 @@
 <?php
-//a
+
   ///
   /// @file    config.php
   ///
