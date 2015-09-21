@@ -381,7 +381,7 @@ $(document).ready( function()
 
   }); // end jQuery editMapName function
 
-
+/*
   // Handle the shortcut keypresses
   if( $.browser.mozilla )
   {
@@ -391,7 +391,7 @@ $(document).ready( function()
   {
     $(document).keydown( checkKey );
   }
-
+*/
 
   // Once the page has loaded, we also need to
   // load the switch and bomb objects.  This could
@@ -411,21 +411,26 @@ function changeBrush( BrushID )
   // make sure that the edit mode is in map editor
   setEditMode( 1 );
 
-  // Get the entity the user requested
-  var BrushLink = $("a[rel='" + BrushID + "']");
+  if( BrushID > 0 )
+  {
+    // Get the entity the user requested
+    var BrushLink = $("a[rel='" + BrushID + "']");
 
-  // Get the image icon
-  var BrushImage = BrushLink.attr( 'rev' );
+    // Get the image icon
+    var BrushImage = BrushLink.attr( 'rev' );
+    BrushImage = "theme/Default/images/icons/15/" + BrushImage + ".png";
 
-  // Update the hidden fields
-  $('#BrushID').val( BrushID );
-  $('#BrushImage').val( BrushImage );
+    // Update the hidden fields
+    $('#BrushID').val( BrushID );
+    $('#BrushImage').val( BrushImage );
 
-  // Remove any instances of the selected brush class
-  $('.brush').find( 'img' ).removeClass();
+    // Remove any instances of the selected brush class
+    $('.brush').find( 'img' ).removeClass();
 
-  // Swap out the brush selector styles
-  BrushLink.find( 'img' ).addClass( 'selected' );
+    // Swap out the brush selector styles
+    BrushLink.find( 'img' ).addClass( 'selected' );
+
+  } // end if BrushID > 0
 
 } // end function changeBrush()
 
@@ -534,7 +539,7 @@ function saveMap( MapID )
 
 }
 
-
+/*
 // Handle the keyboard shortcuts
 function checkKey( e )
 {
@@ -591,7 +596,7 @@ function checkKey( e )
   } // end switch
 
 } // end function checkKey()
-
+*/
 
 function getEditMode()
 {

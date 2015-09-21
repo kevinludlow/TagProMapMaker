@@ -19,69 +19,12 @@
 
   function getImage( $BrushID )
   {
-    switch( $BrushID )
-    {
-      case 1:
-        return "theme/"._THEME_NAME."/images/icons/20/20_black.png";
-        break;
+    $query = "SELECT vc_Reference FROM "._DB_NAME."."._DB_PREFIX."_Brush
+              WHERE pk_ID = '$BrushID'";
+    $result = mysql_query( $query );
+    $row = mysql_fetch_row( $result );
 
-      case 2:
-        return "theme/"._THEME_NAME."/images/icons/20/20_wall.png";
-        break;
-
-      case 3:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_blank.png";
-        break;
-
-      case 4:
-        return "theme/"._THEME_NAME."/images/icons/20/20_flag_red.png";
-        break;
-
-      case 5:
-        return "theme/"._THEME_NAME."/images/icons/20/20_flag_blue.png";
-        break;
-
-      case 6:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_speed.png";
-        break;
-
-      case 7:
-        return "theme/"._THEME_NAME."/images/icons/20/20_button.png";
-        break;
-
-      case 8:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_switch_off.png";
-        break;
-
-      case 9:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_switch_green.png";
-        break;
-
-      case 10:
-        return "theme/"._THEME_NAME."/images/icons/20/20_mine.png";
-        break;
-
-      case 11:
-        return "theme/"._THEME_NAME."/images/icons/20/20_bomb.png";
-        break;
-
-      case 12:
-        return "theme/"._THEME_NAME."/images/icons/20/20_weapon.png";
-        break;
-
-      case 13:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_blue.png";
-        break;
-
-      case 14:
-        return "theme/"._THEME_NAME."/images/icons/20/20_floor_red.png";
-        break;
-
-      default:
-        return "theme/"._THEME_NAME."/images/icons/20/20_black.png";
-        break;
-
-    } // end switch BrushID
+    return "theme/"._THEME_NAME."/images/icons/15/".$row[0].".png";
 
   } // end function getImage()
 
@@ -145,6 +88,35 @@
     } // end switch BrushID
 
   } // end function getImageFull()
+
+
+  function getBrushTiles()
+  {
+    // Initialize the brush package
+    $brushes = array();
+
+    // Create and execute the query
+    $query = "SELECT * FROM "._DB_NAME."."._DB_PREFIX."_Brush
+              WHERE bool_Active = '1'
+              ORDER BY int_Order ASC";
+    $result = mysql_query( $query );
+    $numrows = mysql_num_rows( $result );
+
+    // Step over the rows and populate the available brushes
+    for( $i = 0; $i < $numrows; $i++ )
+    {
+      $row = mysql_fetch_assoc( $result );
+
+      $BrushID = $row['pk_ID'];
+
+      $brushes[$BrushID] = $row;
+
+    } // end for i...
+
+    // Return the result set
+    return $brushes;
+
+  } // end function getBrushTiles()
 
 
   function getMapDetails( $vc_MapCode )

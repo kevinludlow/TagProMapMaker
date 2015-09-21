@@ -129,8 +129,8 @@ table.map
 
 table.map td
 {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   border-left: 1px solid #c5c5c5;
   border-top: 1px solid #c5c5c5;
   text-align: center;
@@ -206,4 +206,23 @@ p, ul, li
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
+}
+
+/* Define the new brush properties */
+
+div.brushes
+{
+}
+
+div.brushes div.brush
+{
+  float: left;
+  margin-right: 14px;
+  margin-bottom: 7px;
+}
+
+div.brushes div.brush img
+{
+  width: 30px;
+  height: 30px;
 }

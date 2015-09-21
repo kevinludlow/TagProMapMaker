@@ -128,116 +128,25 @@
   $NAV .= "    <big>&middot;</big> <a href=\"tools/generateJSON.php?MapID=$MapID\"> Download Map JSON</a><br/>\n";
   $NAV .= "    <big>&middot;</big> <a href=\"tools/loadTestMap.php?MapID=$MapID\" target=\"_BLANK\"> Test Map</a>\n";
 
-  $NAV .= "    <h3>Brush Selections</h3>\n";
 
-  $NAV .= "      <table class=\"brush_selection\">\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"1\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_black.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/black.png\" alt=\"\" title=\"Black/Erase\" class=\"selected\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"2\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_wall.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/wall.png\" alt=\"\" title=\"Wall\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"3\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_blank.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_blank.png\" alt=\"\" title=\"Regular Floor Tile\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td class=\"info\">1</td>\n";
-  $NAV .= "        <td class=\"info\">2</td>\n";
-  $NAV .= "        <td class=\"info\">3</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"4\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_flag_red.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/flag_red.png\" alt=\"\" title=\"Red Team Flag\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"5\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_flag_blue.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/flag_blue.png\" alt=\"\" title=\"Blue Team Flag\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"6\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_speed.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_speed.png\" alt=\"\" title=\"Speed Booster\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td class=\"info\">q</td>\n";
-  $NAV .= "        <td class=\"info\">w</td>\n";
-  $NAV .= "        <td class=\"info\">e</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"7\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_button.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/button.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"8\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_switch_off.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_switch_off.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"9\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_switch_green.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_switch_green.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td class=\"info\">a</td>\n";
-  $NAV .= "        <td class=\"info\">s</td>\n";
-  $NAV .= "        <td class=\"info\">d</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"10\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_mine.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/mine.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"11\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_bomb.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/bomb.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"12\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_weapon.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/weapon.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td class=\"info\">z</td>\n";
-  $NAV .= "        <td class=\"info\">x</td>\n";
-  $NAV .= "        <td class=\"info\">c</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"14\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_red.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_red.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>\n";
-  $NAV .= "          <a class=\"brush\" href=\"#NULL\" rel=\"13\" rev=\"theme/"._THEME_NAME."/images/icons/20/20_floor_blue.png\">\n";
-  $NAV .= "            <img src=\"theme/"._THEME_NAME."/images/icons/40/floor_blue.png\" alt=\"\" />\n";
-  $NAV .= "          </a>\n";
-  $NAV .= "        </td>\n";
-  $NAV .= "        <td>&nbsp;</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      <tr>\n";
-  $NAV .= "        <td class=\"info\">&nbsp;</td>\n";
-  $NAV .= "        <td class=\"info\">&nbsp;</td>\n";
-  $NAV .= "        <td class=\"info\">&nbsp;</td>\n";
-  $NAV .= "      </tr>\n";
-  $NAV .= "      </table>\n";
+  // Display all of the available brushes
+  $brushTiles = getBrushTiles();
+
+  $NAV .= "<h3>Brush Selections</h3>\n";
+
+  $NAV .= "<div class=\"brushes\">\n";
+
+  foreach( $brushTiles as $BrushID => $BrushProperties )
+  {
+    $NAV .= "<div class=\"brush\">\n";
+    $NAV .= "  <a class=\"brush\" href=\"#NULL\" rel=\"".$BrushProperties['pk_ID']."\" rev=\"".$BrushProperties['vc_Reference']."\">\n";
+    $NAV .= "    <img src=\"theme/"._THEME_NAME."/images/icons/40/".$BrushProperties['vc_Reference'].".png\" />\n";
+    $NAV .= "  </a>\n";
+    $NAV .= "</div>\n";
+  }
+
+  $NAV .= "</div>\n";
+
 
   $NAV .= "    <h3>Brush Size</h3>\n";
 
@@ -291,7 +200,7 @@
       else
       {
         $cell_brush = 1;
-        $cell_image = "theme/"._THEME_NAME."/images/icons/20/20_black.png";
+        $cell_image = "theme/"._THEME_NAME."/images/icons/15/background.png";
       }
 
       // Note that indentation has been removed to minimize rendered space
